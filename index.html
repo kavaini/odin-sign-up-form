@@ -9,40 +9,58 @@
   </head>
 
   <body>
-    <p>
-      You are about to sign up to a trusted business platform designed to help
-      you develop your business with the help of participating chambers of
-      commerce. Every account created on the platform is verified by a
-      moderator.
-    </p>
-    <form>
-      <div>
-        <label for="first_name">First name</label>
-        <input name="first_name" id="first_name" required />
-        <label for="last_name">Last name</label>
-        <input name="last_name" id="last_name" required />
+    <div class="left">
+      <div class="full-logo">
+        <img class="logo-img" src="/img/odin-lined.png" alt="Odin head logo" />
+        <div class="logo-text">ODIN</div>
       </div>
-      <div>
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" required />
-        <label for="phone">Phone</label>
-        <input type="tel" name="phone" id="phone" required />
+      <h5>
+        Photo by Andrei R. Popescu on<a
+          href="https://unsplash.com/photos/jlxMtESWPy0"
+          >Unsplash</a
+        >
+      </h5>
+    </div>
+    <div class="right">
+      <div class="top-right">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you organize your deepest dreams.
+          <br />
+          Sign up <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
       </div>
-      <div>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" required />
-        <label for="confirm_password">Confirm password</label>
-        <input
-          type="password"
-          name="confirm_password"
-          id="confirm_password"
-          required
-        />
-      </div>
+      <form>
+        <p>Let's do this!</p>
+        <div class="names">
+          <label for="first_name">First name</label>
+          <input name="first_name" id="first_name" required />
+          <label for="last_name">Last name</label>
+          <input name="last_name" id="last_name" required />
+        </div>
+        <div class="contacts">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" required />
+          <label for="phone" placeholder="+37068686868">Phone</label>
+          <input type="tel" name="phone" id="phone" required />
+        </div>
+        <div class="passwords">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+          <label for="confirm_password">Confirm password</label>
+          <input
+            type="password"
+            name="confirm_password"
+            id="confirm_password"
+            required
+          />
+        </div>
 
-      <button type="submit">Create account</button>
-    </form>
-    <p>Already have an account? <a href="/">Log in</a></p>
+        <button type="submit">Create account</button>
+      </form>
+      <h4>Already have an account? <a href="/">Log in</a></h4>
+    </div>
   </body>
 
   <script src="./script.js"></script>
