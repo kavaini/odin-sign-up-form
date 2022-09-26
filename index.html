@@ -5,26 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up form</title>
-
     <link rel="stylesheet" href="./style/style.css" />
   </head>
 
   <body>
+    <p>
+      You are about to sign up to a trusted business platform designed to help
+      you develop your business with the help of participating chambers of
+      commerce. Every account created on the platform is verified by a
+      moderator.
+    </p>
     <form>
-      <label>First name</label>
-      <input>
-      <label>Last name</label>
-      <input>
-      <label>E-mail</label>
-      <input>
-      <label>Phone</label>
-      <input>
-      <label>Password</label>
-      <input>
-      <label>Confirm password</label>
-      <input>
-      <button>Create account</button>
+      <div>
+        <label for="first_name">First name</label>
+        <input name="first_name" id="first_name" required />
+        <label for="last_name">Last name</label>
+        <input name="last_name" id="last_name" required />
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required />
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" required />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+        <label for="confirm_password">Confirm password</label>
+        <input
+          type="password"
+          name="confirm_password"
+          id="confirm_password"
+          required
+        />
+      </div>
+
+      <button type="submit">Create account</button>
     </form>
+    <p>Already have an account? <a href="/">Log in</a></p>
   </body>
 
   <script src="./script.js"></script>
