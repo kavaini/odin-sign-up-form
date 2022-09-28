@@ -24,9 +24,9 @@ function checkPassword(e) {
   const confirmPass = createForm.elements.confirmPassword.value;
 
   if (firstPass === confirmPass) {
-    showError();
-  } else {
     removeError();
+  } else {
+    showError();
   }
 }
 
