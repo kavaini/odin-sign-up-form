@@ -34,30 +34,41 @@
       </div>
 
       <form id="create-form">
-        <div class="first-column">
-          <label for="first_name">First name</label>
-          <input name="first_name" id="first_name" required />
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" required />
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" required />
-          <div id="wrongPassword">* Passwords do not match</div>
+        <div class="form-columns">
+          <div class="first-column">
+            <label for="first_name">First name</label>
+            <input name="first_name" id="first_name" required />
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required />
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+            <div id="wrongPassword">* Passwords do not match</div>
+          </div>
+          <div class="second-column">
+            <label for="last_name">Last name</label>
+            <input name="last_name" id="last_name" required />
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              required
+              placeholder="+370..."
+            />
+            <label for="confirm_password">Confirm password</label>
+            <input
+              type="password"
+              name="confirm_password"
+              id="confirmPassword"
+              required
+            />
+          </div>
         </div>
-        <div class="second-column">
-          <label for="last_name">Last name</label>
-          <input name="last_name" id="last_name" required />
-          <label for="phone" placeholder="+37068686868">Phone</label>
-          <input type="tel" name="phone" id="phone" required />
-          <label for="confirm_password">Confirm password</label>
-          <input
-            type="password"
-            name="confirm_password"
-            id="confirmPassword"
-            required
-          />
+        <div class="button">
+          <button type="submit">Create account</button>
         </div>
       </form>
-      <button type="submit">Create account</button>
+
       <h4>Already have an account? <a href="/">Log in</a></h4>
     </div>
   </body>

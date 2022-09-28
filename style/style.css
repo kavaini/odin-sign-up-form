@@ -1,4 +1,9 @@
 /*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Norse";
+  src: url("./../font/Norse-Bold.otf");
+}
+
 body {
   display: flex;
   flex-direction: row;
@@ -14,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
 }
 
 .logo-img {
@@ -64,10 +70,12 @@ form {
   justify-content: space-around;
 }
 .first-column,
-.second-column {
+.second-column,
+#create-form {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding: 15px;
 }
 
 button {
@@ -113,4 +121,9 @@ h4 a {
   color: red;
   position: absolute;
   bottom: 5px;
+}
+
+.form-columns {
+  display: flex;
+  flex-direction: row;
 }
