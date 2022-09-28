@@ -17,8 +17,8 @@ function removeError() {
   passConfirmElement.classList.remove("error");
 }
 
-function checkPassword(e) {
-  e.preventDefault();
+function checkPassword(event) {
+  event.preventDefault();
 
   const firstPass = createForm.elements.password.value;
   const confirmPass = createForm.elements.confirmPassword.value;
