@@ -1,9 +1,8 @@
-const createForm = document.createElementById("createForm");
-const wrongPassword = document.createElementById("wrongPassword");
-const passElement = document.querySelector("#createForm", "#password");
+const createForm = document.getElementById("create-form");
+const wrongPassword = document.getElementById("wrongPassword");
+const passElement = document.querySelector("#createForm #password");
 const passConfirmElement = document.querySelector(
-  "#createForm",
-  "#confirmPassword"
+  "#createForm #confirmPassword"
 );
 
 function showError() {
@@ -12,10 +11,10 @@ function showError() {
   passConfirmElement.classList.add("error");
 }
 
-function noError() {
+function removeError() {
   wrongPassword.style.display = "none";
-  passElement.classList.add("error");
-  passConfirmElement.classList.add("error");
+  passElement.classList.remove("error");
+  passConfirmElement.classList.remove("error");
 }
 
 function checkPassword(e) {
@@ -27,7 +26,7 @@ function checkPassword(e) {
   if (firstPass === confirmPass) {
     showError();
   } else {
-    noError();
+    removeError();
   }
 }
 
